@@ -1,0 +1,11 @@
+#!/bin/bash
+path_file="$HOME/.config/lxqt/lxqt-powermanagement.conf"
+if grep -q 'enableIdlenessWatcher=false' "$path_file"
+	then
+	sed -i 's/enableIdlenessWatcher=false/enableIdlenessWatcher=true/' "$path_file"
+	notify-send -t 4800 -a Powermanagment -i user-idle "Idleness watcher enabled"
+
+else
+	sed -i 's/enableIdlenessWatcher=true/enableIdlenessWatcher=false/' "$path_file"
+	notify-send -t 4800 -a Powermanagement -i user-idle "Idleness watcher disabled"
+fi

@@ -1,0 +1,15 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Name=Toggle idleness
+Comment=Activate and disactivate idleness-watcher
+Comment[it]=Attiva e disattiva la sospensione automatica
+Name[de]=
+Comment[de]=
+
+Exec=/usr/bin/toggle-idleness
+Icon=user-idle
+Type=Application
+Categories=System;
+MimeType=application/x-xdg-protocol-tg;x-scheme-handler/tg;
+X-Desktop-File-Install-Version=0.22
